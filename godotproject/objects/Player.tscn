@@ -7,6 +7,9 @@ radius = 19.3131
 height = 20.246
 
 [node name="Player" type="Node2D"]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
