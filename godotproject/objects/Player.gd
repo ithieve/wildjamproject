@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var velocity = Vector2(0,0)
 var speed = 5
-var control
+var control = Vector2(0,0)
 
 
 
