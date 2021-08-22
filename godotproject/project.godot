@@ -11,6 +11,7 @@ config_version=4
 [application]
 
 config/name="WildJam"
+run/main_scene="res://scene/MainScene.tscn"
 run/low_processor_mode=true
 config/icon="res://icon.png"
 
