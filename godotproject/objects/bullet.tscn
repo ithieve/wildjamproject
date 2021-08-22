@@ -7,6 +7,8 @@ radius = 4.4082
 height = 7.90495
 
 [node name="bullet" type="RigidBody2D"]
+contacts_reported = 1
+contact_monitor = true
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
