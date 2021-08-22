@@ -4,6 +4,6 @@
 
 [node name="MainScene" type="Node2D"]
 
-[node name="background of main scene" type="Sprite" parent="."]
+[node name="background" type="Sprite" parent="."]
 position = Vector2( 640.573, 358.411 )
 texture = ExtResource( 1 )
