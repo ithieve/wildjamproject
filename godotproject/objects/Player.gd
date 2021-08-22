@@ -19,6 +19,7 @@ func _control_player():
 	control = control.normalized()
 	
 	move_and_slide(control * speed)
+	look_at(get_global_mouse_position())
 
 func _ready():
 	pass
