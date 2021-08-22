@@ -5,8 +5,9 @@
 [ext_resource path="res://res/non selected theme.tres" type="StyleBox" id=3]
 
 [node name="Button" type="Button"]
-margin_right = 277.0
-margin_bottom = 83.0
+margin_right = 270.0
+margin_bottom = 80.0
+rect_min_size = Vector2( 270, 80 )
 custom_styles/hover = ExtResource( 3 )
 custom_styles/pressed = ExtResource( 1 )
 custom_styles/focus = ExtResource( 1 )

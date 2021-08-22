@@ -3,29 +3,40 @@
 [ext_resource path="res://res/background of main scene.jpg" type="Texture" id=1]
 [ext_resource path="res://objects/Button.tscn" type="PackedScene" id=2]
 
-[node name="MainScene" type="Node2D"]
+[node name="MainScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 
 [node name="background" type="Sprite" parent="."]
 position = Vector2( 658.532, 367.391 )
 texture = ExtResource( 1 )
 
-[node name="button_play" parent="." instance=ExtResource( 2 )]
-margin_left = 527.0
-margin_top = 48.0
-margin_right = 764.0
-margin_bottom = 119.0
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 505.0
+margin_top = 190.0
+margin_right = 775.0
+margin_bottom = 530.0
+custom_constants/separation = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button_play" parent="CenterContainer/VBoxContainer" instance=ExtResource( 2 )]
 text = "Play Game"
 
-[node name="button_options" parent="." instance=ExtResource( 2 )]
-margin_left = 527.0
-margin_top = 160.0
-margin_right = 764.0
-margin_bottom = 231.0
+[node name="button_options" parent="CenterContainer/VBoxContainer" instance=ExtResource( 2 )]
+margin_top = 130.0
+margin_bottom = 210.0
 text = "Options"
 
-[node name="button_exit" parent="." instance=ExtResource( 2 )]
-margin_left = 527.0
-margin_top = 272.0
-margin_right = 764.0
-margin_bottom = 343.0
+[node name="button_exit" parent="CenterContainer/VBoxContainer" instance=ExtResource( 2 )]
+margin_top = 260.0
+margin_bottom = 340.0
 text = "Exit"
