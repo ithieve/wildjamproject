@@ -22,6 +22,7 @@ func _control_player():
 	look_at(get_global_mouse_position())
 
 func _ready():
+	look_at(get_global_mouse_position())
 	pass
 
 
